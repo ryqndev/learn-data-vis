@@ -1,0 +1,19 @@
+:root{
+    --bg-primary: #101010;
+    --bg-primary-1: #151515;
+    --text-primary: white;
+    --text-secondary: #b9b9b9;
+    --accent: #f68080;
+    --accent-alt: #8080f6;
+
+    --navy-blue-1: #191d2a;
+    --navy-blue-2: #292d3e;
+
+    --white: #ffffff;
+    --grey-light-1: #b9b9b9;
+
+    --bg-primary: var(--navy-blue-1);
+    --bg-secondary: var(--navy-blue-2);
+    --nav-background: #191D2ACC;
+    --nav-shadow: #00000088;
+}

@@ -1,0 +1,23 @@
+{
+    "sources": [
+        {
+            "path": "fund-data-vis",
+            "title": "Fundamentals of Data Visualization",
+            "author": "Claus O. Wilke",
+            "figures": {
+                "f2.3": [
+                    {
+                        "lang": "R",
+                        "library": "ggplot2",
+                        "link": "https://ggplot2.tidyverse.org/"
+                    },
+                    {
+                        "lang": "JS",
+                        "library": "visx",
+                        "link": "https://airbnb.io/visx/"
+                    }
+                ]
+            }
+        }
+    ]
+}
