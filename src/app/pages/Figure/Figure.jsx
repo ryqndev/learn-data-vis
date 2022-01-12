@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { CodeDisplay, Directory, GeneratedFigure } from './components';
 import cn from './Figure.module.scss';
 
@@ -5,10 +6,10 @@ function Figure() {
 	return (
 		<main className={cn.container}>
 			<Directory />
-            <CodeDisplay />
-            <GeneratedFigure />
+			<CodeDisplay />
+			<GeneratedFigure />
 		</main>
 	);
 }
 
-export default Figure;
+export default memo(Figure);

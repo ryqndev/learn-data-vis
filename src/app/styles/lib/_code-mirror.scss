@@ -1,0 +1,16 @@
+@import 'codemirror/lib/codemirror.css';
+@import 'codemirror/theme/material-palenight.css';
+
+:root {
+    --bg-code: var(--bg-primary);
+}
+
+.CodeMirror {
+    height: auto;
+    font-size: 1rem;
+    line-height: 1.5em;
+
+    * {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+}

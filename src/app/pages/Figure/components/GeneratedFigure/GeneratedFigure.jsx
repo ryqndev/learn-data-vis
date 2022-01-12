@@ -1,12 +1,14 @@
+import { memo } from 'react';
+import { useParams } from 'react-router-dom';
 import cn from './GeneratedFigure.module.scss';
 
 function GeneratedFigure() {
-    return (
-        <div className={cn.container}>
-        
-        </div>
-    );
+	const { source, id, lang } = useParams();
+	return (
+		<div className={cn.container}>
+
+		</div>
+	);
 }
 
-export default GeneratedFigure;
-
+export default memo(GeneratedFigure);

@@ -1,0 +1,12 @@
+{
+    "r/ggplot2": {
+        "lang": "R",
+        "library": "ggplot2",
+        "link": "https://ggplot2.tidyverse.org/"
+    },
+    "js/visx": {
+        "lang": "JS",
+        "library": "visx",
+        "link": "https://airbnb.io/visx/"
+    }
+}

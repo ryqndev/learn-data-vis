@@ -1,22 +1,24 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { memo } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import AppWrapper from './AppWrapper.jsx';
 import { Navbar } from './components';
 import { Home, Figure } from './pages';
 import './styles/main.scss';
 
-function App() {
-	return (
-		<Router>
-			<Navbar />
-			<Routes>
-				<Route index element={<Home />} />
-				<Route path='figure' element={<Figure />}>
-					<Route path=':source' element={<Figure />}>
-						<Route path=':id' element={<Figure />} />
+const App = () => (
+	<AppWrapper>
+		<Navbar />
+		<Routes>
+			<Route index element={<Home />} />
+			<Route path='figure' element={<Figure />}>
+				<Route path=':source' element={<Figure />}>
+					<Route path=':id' element={<Figure />}>
+						<Route path=':lang' element={<Figure />} />
 					</Route>
 				</Route>
-			</Routes>
-		</Router>
-	);
-}
+			</Route>
+		</Routes>
+	</AppWrapper>
+);
 
-export default App;
+export default memo(App);

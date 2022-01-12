@@ -1,22 +1,29 @@
 {
-    "sources": [
+    "sources": [{
+            "path": "introduction",
+            "title": "Introduction",
+            "author": "Ryan Yang",
+            "figures": []
+        },
         {
             "path": "fund-data-vis",
             "title": "Fundamentals of Data Visualization",
             "author": "Claus O. Wilke",
             "figures": {
-                "f2.3": [
-                    {
-                        "lang": "R",
-                        "library": "ggplot2",
-                        "link": "https://ggplot2.tidyverse.org/"
-                    },
-                    {
-                        "lang": "JS",
-                        "library": "visx",
-                        "link": "https://airbnb.io/visx/"
-                    }
-                ]
+                "f2.3": {
+                    "charts": ["r/ggplot2", "js/visx"],
+                    "name": "Figure 2.3",
+                    "type": ["line plot"],
+                    "source": "NOAA",
+                    "link": "https://clauswilke.com/dataviz/aesthetic-mapping.html#fig:temp-normals-vs-time"
+                },
+                "f2.4": {
+                    "charts": ["r/ggplot2", "js/visx"],
+                    "name": "Figure 2.4",
+                    "type": ["heat map"],
+                    "source": "NOAA",
+                    "link": "https://clauswilke.com/dataviz/aesthetic-mapping.html#fig:four-locations-temps-by-month"
+                }
             }
         }
     ]

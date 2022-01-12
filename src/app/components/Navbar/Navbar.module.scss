@@ -4,12 +4,12 @@ nav.container {
     top: 0;
     left: 0;
     box-shadow: 0 0 10px var(--nav-shadow);
-    height: 64px;
+    height: 56px;
     width: 100%;
     padding: 0px 30px;
     box-sizing: border-box;
     display: grid;
-    column-gap: 40px;
+    column-gap: 30px;
     background-color: var(--nav-background);
     grid-template-columns: 30px auto 1fr auto;
     grid-template-areas: "logo name template toggle";
@@ -23,25 +23,22 @@ nav.container {
         grid-template-areas: "logo name toggle";
     }
 
-    svg {
+    .logo {
+        display: grid;
         grid-area: logo;
         box-sizing: border-box;
         height: 100%;
         width: 100%;
-        margin-top: 8px;
-        // padding: 0px 0px;
-    }
-    .logo {
         border-radius: 50%;
         background-color: white;
-        padding: 2px;
-        transform: scale(1.3);
+        padding: 1px;
     }
+
     .name {
         grid-area: name;
         font-family: "Hyperwave";
-        font-size: 2.4em;
-        color: white;
+        font-size: 2.2em;
+        color: #f68080;
     }
 
     a {
@@ -50,6 +47,7 @@ nav.container {
     }
 
     .toggle {
+        display: grid;
         grid-area: toggle;
         place-self: center;
     }
