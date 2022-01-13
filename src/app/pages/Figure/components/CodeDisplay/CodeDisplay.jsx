@@ -7,29 +7,50 @@ import cn from './CodeDisplay.module.scss';
 
 function CodeDisplay() {
 	const { source, id, lang } = useParams();
-	const [content, setContent] = useState('');
+	const [sourceCode, setSourceCode] = useState('');
+	const [description, setDescription] = useState('');
+
+	function displayCode(file, type) {
+		fetch(file.default)
+			.then(res => res.text())
+			.then(code => {
+				switch (type) {
+					case 'js':
+					case 'R':
+					case 'r':
+					default:
+						setSourceCode('```r main.R\n' + code + '\n```');
+				}
+			});
+	}
 
 	function display(file) {
 		fetch(file.default)
 			.then(res => res.text())
-			.then(setContent);
+			.then(setDescription);
 	}
+
 	useEffect(() => {
 		if (!source) {
-			setContent('Home');
+			setSourceCode('Home');
+		}
+		if (!id) {
+			setSourceCode('');
+			import(`../../../../content/${source}/README.md`).then(display);
 			return;
 		}
-		if (!id)
-			return import('../../../../content/' + source + '/README.md').then(
-				display
-			);
 
-		if (!lang)
-			return import(`../../../../content/${source}/${id}/main.r`).then(
-				display
+		if (!lang) {
+			// import(`${path}${id}/main.R`).then((r) => displayCode(r, 'R'));
+			import(`../../../../content/${source}/${id}/main.R`).then(r =>
+				displayCode(r, 'R')
 			);
-
-		import(`../../../../content/${source}/${id}/main.r`).then(display);
+		} else {
+			import(`../../../../content/${source}/${id}/main.R`).then(r =>
+				displayCode(r, 'R')
+			);
+		}
+		import(`../../../../content/${source}/${id}/README.md`).then(display);
 	}, [source, id, lang]);
 
 	return (
@@ -41,11 +62,7 @@ function CodeDisplay() {
 					transformLinkUri={null}
 					// transformImageUri={transformImageUri}
 				>
-					{!source
-						? content
-						: `${'```r main.r'}
-${content}
-${'```'}`}
+					{description + '\n' + sourceCode}
 				</ReactMarkdown>
 			</article>
 		</div>

@@ -1,0 +1,5 @@
+footer {
+    &>* {
+        transition: background-color 250ms;
+    }
+}

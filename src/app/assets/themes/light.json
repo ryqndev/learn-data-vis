@@ -1,0 +1,12 @@
+{
+    "--bg-secondary": "#ffdcdc",
+    "--bg-primary": "#ffecec",
+    "--card-bg": "#ffecec",
+    "--card-bg-active": "#ffeeee",
+    "--nav-background": "#ffdcdc88",
+    "--nav-shadow": "#f6808088",
+    "--text-primary": "#000000",
+
+    "--footer-background-primary": "#fdcdcd",
+    "--footer-background-secondary": "#ffdcdc"
+}

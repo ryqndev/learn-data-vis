@@ -6,10 +6,10 @@ nav.container {
     box-shadow: 0 0 10px var(--nav-shadow);
     height: 56px;
     width: 100%;
-    padding: 0px 30px;
+    padding: 0px 20px;
     box-sizing: border-box;
     display: grid;
-    column-gap: 30px;
+    column-gap: 20px;
     background-color: var(--nav-background);
     grid-template-columns: 30px auto 1fr auto;
     grid-template-areas: "logo name template toggle";
@@ -29,7 +29,7 @@ nav.container {
         box-sizing: border-box;
         height: 100%;
         width: 100%;
-        border-radius: 50%;
+        border-radius: 3px;
         background-color: white;
         padding: 1px;
     }
@@ -38,7 +38,7 @@ nav.container {
         grid-area: name;
         font-family: "Hyperwave";
         font-size: 2.2em;
-        color: #f68080;
+        color: var(--text-primary);
     }
 
     a {

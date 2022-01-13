@@ -2,6 +2,7 @@ import { memo } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import AppWrapper from './AppWrapper.jsx';
 import { Navbar } from './components';
+import Footer from '@ryqndev/footer';
 import { Home, Figure } from './pages';
 import './styles/main.scss';
 
@@ -18,6 +19,7 @@ const App = () => (
 				</Route>
 			</Route>
 		</Routes>
+		<Footer />
 	</AppWrapper>
 );
 

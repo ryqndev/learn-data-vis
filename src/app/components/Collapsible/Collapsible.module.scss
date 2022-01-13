@@ -1,4 +1,4 @@
-.container {    
+.container {
     &>.header {
         display: grid;
         grid-template-columns: 1fr 36px;
@@ -6,7 +6,7 @@
 
         &>.expand {
             display: grid;
-            place-self: center end;
+            place-self: end;
             width: 36px;
             height: 36px;
             fill: var(--text-primary);

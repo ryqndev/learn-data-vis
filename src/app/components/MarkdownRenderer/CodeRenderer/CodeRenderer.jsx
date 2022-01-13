@@ -1,6 +1,5 @@
 import {UnControlled as CodeMirror} from '@leifandersen/react-codemirror2';
 import FileStructureDisplay from './FileStructureDisplay';
-import 'codemirror/mode/python/python';
 import 'codemirror/mode/shell/shell';
 import 'codemirror/mode/javascript/javascript';
 import 'codemirror/mode/r/r';

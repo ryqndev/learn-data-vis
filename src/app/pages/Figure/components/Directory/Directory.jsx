@@ -23,15 +23,18 @@ function Directory() {
 					<Link to={source.path} className={cn.header}>
 						<h2>{source.title}</h2>
 					</Link>
-					<ul>
-						{Object.keys(source.figures).map(id => (
-							<Link to={source.path + '/' + id} key={id}>
-								<li key={id} className={cn.item}>
-									{source.figures[id].name}
-								</li>
-							</Link>
-						))}
-					</ul>
+					<div>
+						<hr />
+						<ul>
+							{Object.keys(source.figures).map(id => (
+								<Link to={source.path + '/' + id} key={id}>
+									<li key={id} className={cn.item}>
+										{source.figures[id].name}
+									</li>
+								</Link>
+							))}
+						</ul>
+					</div>
 				</Collapsible>
 			))}
 		</div>

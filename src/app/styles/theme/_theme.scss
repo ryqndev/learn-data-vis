@@ -1,20 +1,26 @@
 :root{
-    --bg-primary: #101010;
-    --bg-primary-1: #151515;
     --text-primary: white;
     --text-secondary: #b9b9b9;
     --accent: #f68080;
+    --accent-color: #f68080;
     --accent-alt: #8080f6;
 
     --navy-blue-1: #191d2a;
-    --navy-blue-2: #292d3e;
+    --navy-blue-2: #1e2233;
+    --navy-blue-3: #292d3e;
 
     --white: #ffffff;
     --grey-light-1: #b9b9b9;
+}
 
+:root {
     --text-primary: var(--white);
-    --bg-primary: var(--navy-blue-2);
+    --bg-primary: var(--navy-blue-3);
     --bg-secondary: var(--navy-blue-1);
+
+    --card-bg: var(--navy-blue-2);
+    --card-bg-active: var(--navy-blue-3);
+
     --nav-background: #191D2ACC;
     --nav-shadow: #00000088;
 }

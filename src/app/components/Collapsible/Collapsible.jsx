@@ -17,7 +17,7 @@ function Collapsible({ children, className, icon, ...props }) {
 					/>
 				)}
 			</div>
-			{open && (
+			{open && icon && (
 				<div className={clsx(cn.content, open && cn.open)}>
 					{content}
 				</div>

@@ -1,0 +1,12 @@
+{
+    "--bg-primary": "var(--navy-blue-3)",
+    "--bg-secondary": "var(--navy-blue-1)",
+    "--card-bg": "var(--navy-blue-2)",
+    "--card-bg-active": "var(--navy-blue-3)",
+    "--nav-background": "#191D2ACC",
+    "--nav-shadow": "#00000088",
+    "--text-primary": "var(--white)",
+
+    "--footer-background-primary": "rgb(15, 15, 15)",
+    "--footer-background-secondary": "rgb(24, 24, 24)"
+}

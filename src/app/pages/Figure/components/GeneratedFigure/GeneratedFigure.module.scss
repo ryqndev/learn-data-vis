@@ -1,4 +1,36 @@
 .container {
-    // width: 100%;
-}
+    display: grid;
+    padding: 100px 40px 60px;
+    overflow-y: scroll;
 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+
+    & .content {
+        text-transform: uppercase;
+        place-self: center;
+        object-fit: contain;
+        color: var(--accent);
+        text-align: center;
+
+        &>h1 {
+            text-align: left;
+            margin: 0;
+            font-size: 3em;
+            font-family: 'Poppins';
+            font-weight: bold;
+        }
+        &>span {
+            color: var(--text-primary);
+        }
+
+        &>img {
+            width: 100%;
+        }
+    }
+}

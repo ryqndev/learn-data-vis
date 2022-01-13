@@ -1,16 +1,38 @@
 .container {
-    padding: 20vh 0px 80px;
+    padding: 100px 0px 0px;
     overflow-y: scroll;
 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+
     &>.source {
-        padding: 10px 25px;
+        margin: 20px;
+        padding: 25px 20px 25px 25px;
+        border-radius: 8px;
+        background-color: var(--card-bg);
+        transition: background-color 250ms, filter 250ms;
+        
+        &.selected {
+            background-color: var(--card-bg-active);
+        }
+
+        &:hover {
+            filter: brightness(1.2);
+        }
     }
 
     & h2 {
         font-size: 1.2em;
         font-weight: bold;
         margin: 0;
-        color: var(--text-primary);
+        color: var(--accent);
+        text-transform: uppercase;
+        line-height: 1.2em;
     }
 
     & ul {
