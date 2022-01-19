@@ -6,37 +6,47 @@
             "figures": []
         },
         {
+            "path": "amounts",
+            "title": "Amounts",
+            "author": "Ryan Yang",
+            "figures": {
+                "bars": {
+                    "charts": ["r/ggplot2"],
+                    "name": "Bar Charts",
+                    "type": ["bars"],
+                    "source": "gapminder"
+                },
+                "horizontal-bars": {
+                    "charts": ["r/ggplot2"],
+                    "name": "Horizontal Bar Charts",
+                    "type": ["bars"],
+                    "source": "gapminder"
+                },
+                "dots": {
+                    "charts": ["r/ggplot2"],
+                    "name": "Dot Charts",
+                    "type": ["dots"],
+                    "source": "gapminder"
+                },
+                "heatmaps": {
+                    "charts": ["r/ggplot2"],
+                    "name": "Heatmaps",
+                    "type": ["heatmaps"],
+                    "source": "gapminder"
+                }
+            }
+        },
+        {
             "path": "fund-data-vis",
             "title": "Fundamentals of Data Visualization",
             "author": "Claus O. Wilke",
             "figures": {
-                "f2.3": {
-                    "charts": ["r/ggplot2"],
-                    "name": "Figure 2.3",
-                    "type": ["line plot"],
-                    "source": "NOAA",
-                    "link": "https://clauswilke.com/dataviz/aesthetic-mapping.html#fig:temp-normals-vs-time"
-                },
-                "f2.4": {
-                    "charts": ["r/ggplot2"],
-                    "name": "Figure 2.4",
-                    "type": ["heat map"],
-                    "source": "NOAA",
-                    "link": "https://clauswilke.com/dataviz/aesthetic-mapping.html#fig:four-locations-temps-by-month"
-                },
                 "f6.11": {
                     "charts": ["r/ggplot2"],
                     "name": "Figure 6.11",
                     "type": ["dot plot"],
                     "source": "gapminder",
                     "link": "https://clauswilke.com/dataviz/visualizing-amounts.html#fig:Americas-life-expect"
-                },
-                "f7.1": {
-                    "charts": ["r/ggplot2"],
-                    "name": "Figure 7.1",
-                    "type": ["histogram"],
-                    "source": "titanic",
-                    "link": "https://clauswilke.com/dataviz/histograms-density-plots.html#fig:titanic-ages-hist1"
                 }
             }
         }

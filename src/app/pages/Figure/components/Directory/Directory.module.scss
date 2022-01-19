@@ -45,16 +45,17 @@
 
     & a {
         text-decoration: none;
+        transition: color 250ms;
 
         & .item {
             text-decoration: none;
             font-size: 1.2em;
             color: grey;
-            margin-left: 20px;
+            // margin-left: 20px;
             font-family: 'Source Sans Pro';
 
             &:hover {
-                text-decoration: underline;
+                color: var(--text-primary);
             }
         }
     }
