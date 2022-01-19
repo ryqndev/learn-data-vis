@@ -1,4 +1,4 @@
-import { useLocation, Link as HashLink } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 // import { HashLink } from 'react-router-hash-link';
 // import scrollWithOffset from '../../../controller/libs/hashLinkScroll';
 
@@ -17,10 +17,8 @@ const ListItem = ({ ordered, children, ...props }) => {
 			<li>
 				{'\u00A0'.repeat(ordered ? 6 : 0)}
 				<ol>
-					<HashLink
-						smooth
+					<Link
 						to={linkLocation}
-						// scroll={el => scrollWithOffset(el)}
 					>
 						<li>
 							{'\u00A0'.repeat(ordered ? 6 : 0)}
@@ -30,14 +28,14 @@ const ListItem = ({ ordered, children, ...props }) => {
 								{extraTextFromInnerLink(props.node)}
 							</span>
 						</li>
-					</HashLink>
+					</Link>
 					{children.slice(1)}
 				</ol>
 			</li>
 		);
 	}
 	return (
-		<HashLink smooth to={linkLocation} 
+		<Link to={linkLocation} 
 		// scroll={el => scrollWithOffset(el)}
 		>
 			<li>
@@ -48,7 +46,7 @@ const ListItem = ({ ordered, children, ...props }) => {
 					{extraTextFromInnerLink(props.node)}
 				</span>
 			</li>
-		</HashLink>
+		</Link>
 	);
 };
 

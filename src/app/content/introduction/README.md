@@ -15,7 +15,6 @@ All generated charts (like those made in R) have CSS filters applied to them, ra
 Plans to support mobile/smaller screens (width < 1400px) are underway, just not a priority at the moment.
 
 #### Legal 
-All code and generated charts are written by myself and are never taken directly from an external source. The purpose of this site is to teach how one *could* code a certain type of chart or diagram, whereas the source material for some charts likely only intends to show the chart for its content and the design itself - thus being transformative in nature. Similarly, this site is purely **educational**, **non-commercial**, and **transformative** - qualifying for **Fair Use**. Furthermore, all sources will have proper and full attribution and credit if it exists to the best of my knowledge. 
-
+All code and generated charts are written by myself and are never taken directly from an external source. The purpose of this site is to teach how one *could* code a certain type of chart or diagram, whereas the source material for some charts likely only intends to show the chart for its content and the design itself - thus being transformative in nature. Similarly, this site is purely **educational**, **non-commercial**, and **transformative** - qualifying for **Fair Use**. Furthermore, all sources will have full attribution and credit if it exists to the best of my knowledge. 
 
 With that in mind, if you have issues if you think your content is not attributed correctly or want something taken down, feel free to let me know through any of my contact options found on the bottom of this site.

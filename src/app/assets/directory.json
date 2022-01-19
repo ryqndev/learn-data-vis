@@ -49,6 +49,19 @@
                     "link": "https://clauswilke.com/dataviz/visualizing-amounts.html#fig:Americas-life-expect"
                 }
             }
+        },
+        {
+            "path": "misc",
+            "title": "Miscellaneous",
+            "author": "Ryan Yang",
+            "figures": {
+                "boba-consumption": {
+                    "charts": ["r/ggplot2"],
+                    "name": "Boba Consumption by Time",
+                    "type": ["heatmap"],
+                    "source": "boba.watch"
+                }
+            }
         }
     ]
 }

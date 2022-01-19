@@ -25,6 +25,7 @@ const HeaderRenderer = props => {
 				</header>
 			);
 		case 2:
+			document.title = headerContent;
 			return (
 				<h2 className={cn.header} id={headerHashLink}>
 					{headerContent}

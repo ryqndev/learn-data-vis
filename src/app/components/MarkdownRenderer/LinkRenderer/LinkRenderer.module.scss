@@ -1,6 +1,8 @@
 a.container:any-link {
     color: #F68080;
     font-weight: bold;
+    display: inline;
+
     &:hover {
         color: var(--accent-alt);
     }

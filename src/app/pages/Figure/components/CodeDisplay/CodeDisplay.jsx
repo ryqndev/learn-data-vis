@@ -42,13 +42,21 @@ function CodeDisplay() {
 
 		if (!lang) {
 			// import(`${path}${id}/main.R`).then((r) => displayCode(r, 'R'));
-			import(`../../../../content/${source}/${id}/main.R`).then(r =>
-				displayCode(r, 'R')
-			);
+			import(`../../../../content/${source}/${id}/main.R`)
+				.then(r => displayCode(r, 'R'))
+				.catch(err => {
+					setSourceCode(
+						"```text Something went wrong... \nCouldn't retrieve the source code.\n```"
+					);
+				});
 		} else {
-			import(`../../../../content/${source}/${id}/main.R`).then(r =>
-				displayCode(r, 'R')
-			);
+			import(`../../../../content/${source}/${id}/main.R`)
+				.then(r => displayCode(r, 'R'))
+				.catch(err => {
+					setSourceCode(
+						"```text Something went wrong... \nCouldn't retrieve the source code.\n```"
+					);
+				});
 		}
 		import(`../../../../content/${source}/${id}/README.md`).then(display);
 	}, [source, id, lang]);
@@ -58,7 +66,7 @@ function CodeDisplay() {
 			<article className='md-renderer'>
 				<ReactMarkdown
 					plugins={[gfm]}
-					renderers={{ ...MarkdownRenderer }}
+					renderers={MarkdownRenderer}
 					transformLinkUri={null}
 					// transformImageUri={transformImageUri}
 				>

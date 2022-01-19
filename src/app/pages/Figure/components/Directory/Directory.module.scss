@@ -44,6 +44,8 @@
     }
 
     & a {
+        display: grid;
+        place-content: center start;
         text-decoration: none;
         transition: color 250ms;
 
@@ -51,7 +53,6 @@
             text-decoration: none;
             font-size: 1.2em;
             color: grey;
-            // margin-left: 20px;
             font-family: 'Source Sans Pro';
 
             &:hover {
