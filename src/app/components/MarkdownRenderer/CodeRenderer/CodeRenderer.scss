@@ -23,6 +23,8 @@
 
     box-shadow: 0 0 10px 1px var(--bg-secondary);
 
+    transition: box-shadow 250ms;
+
     .title-bar {
         display: grid;
         grid-template-columns: 100px 1fr;
@@ -30,14 +32,13 @@
         h3 {
             margin: 0;
             font-size: 1rem;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Source Sans Pro';
             padding-top: 13px;
             font-weight: bold;
             color: white;
         }
     }
     .code-mirror--wrapper {
-        // background-color: var(--bg-code);
         padding: 0px 10px 20px 10px;
     }
 }

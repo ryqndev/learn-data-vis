@@ -3,8 +3,8 @@ import { Children, memo, useState } from 'react';
 import { ReactComponent as ExpandMoreIcon } from '../../assets/icons/expand-more.svg';
 import cn from './Collapsible.module.scss';
 
-function Collapsible({ children, className, icon, ...props }) {
-	const [open, setOpen] = useState(false);
+function Collapsible({ children, className, icon, isOpen=false, ...props }) {
+	const [open, setOpen] = useState(isOpen);
 	const [header, ...content] = Children.toArray(children);
 
 	return (

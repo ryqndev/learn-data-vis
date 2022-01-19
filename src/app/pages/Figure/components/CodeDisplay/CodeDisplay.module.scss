@@ -6,7 +6,7 @@
     resize: horizontal;
 
     background-color: var(--bg-primary);
-    padding: 120px 40px;
+    padding: 80px 40px;
 
     transition: background-color 250ms;
 
@@ -16,5 +16,10 @@
     &::-webkit-scrollbar {
         width: 0;
         background: transparent;
+    }
+    p {
+        font-family: 'Nunito', sans-serif;
+        margin: 20px 0px;
+        line-height: 1.8em;
     }
 }

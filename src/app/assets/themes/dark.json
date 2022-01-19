@@ -6,6 +6,7 @@
     "--nav-background": "#191D2ACC",
     "--nav-shadow": "#00000088",
     "--text-primary": "var(--white)",
+    "--chart-filter": "invert(86.5%) hue-rotate(60deg) saturate(153%)",
 
     "--footer-background-primary": "rgb(15, 15, 15)",
     "--footer-background-secondary": "rgb(24, 24, 24)"

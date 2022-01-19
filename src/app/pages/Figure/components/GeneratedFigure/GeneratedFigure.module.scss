@@ -30,7 +30,12 @@
         }
 
         &>img {
+            padding: 20px;
+            background-color: #ffecec;
+            filter: var(--chart-filter);
+            border-radius: 8px;
             width: 100%;
+            transition: filter 250ms;
         }
     }
 }

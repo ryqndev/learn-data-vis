@@ -4,12 +4,12 @@ nav.container {
     top: 0;
     left: 0;
     box-shadow: 0 0 10px var(--nav-shadow);
-    height: 56px;
+    height: 64px;
     width: 100%;
     padding: 0px 20px;
     box-sizing: border-box;
     display: grid;
-    column-gap: 20px;
+    column-gap: 30px;
     background-color: var(--nav-background);
     grid-template-columns: 30px auto 1fr auto;
     grid-template-areas: "logo name template toggle";

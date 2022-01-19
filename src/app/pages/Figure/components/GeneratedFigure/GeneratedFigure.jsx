@@ -6,12 +6,6 @@ function GeneratedFigure() {
 	const { source, id, lang } = useParams();
 	const [content, setContent] = useState('');
 
-	function display(file) {
-		fetch(file.default)
-			.then(res => res.text())
-			.then(setContent);
-	}
-
 	useEffect(() => {
 		if (!source || !id) return setContent('Click an item');
 		switch (lang) {
@@ -20,12 +14,11 @@ function GeneratedFigure() {
 			case 'R':
 			default:
 				import(`../../../../content/${source}/${id}/chart.png`).then(
-					file => {
-						setContent(<img alt='chart' src={file.default} />);
-					}
+					file => setContent(<img alt='chart' src={file.default} />)
 				);
 		}
 	}, [source, id, lang]);
+
 	return (
 		<div className={cn.container}>
 			<div className={cn.content}>

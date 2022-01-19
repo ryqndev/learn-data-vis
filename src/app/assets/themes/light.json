@@ -6,6 +6,7 @@
     "--nav-background": "#ffdcdc88",
     "--nav-shadow": "#f6808088",
     "--text-primary": "#000000",
+    "--chart-filter": "invert(0%) hue-rotate(0deg)",
 
     "--footer-background-primary": "#fdcdcd",
     "--footer-background-secondary": "#ffdcdc"
