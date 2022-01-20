@@ -4,5 +4,4 @@
 
 Figure 6.11 shows average life expectancies of countries in the Americas in 2007
 
-
-
+### Code
