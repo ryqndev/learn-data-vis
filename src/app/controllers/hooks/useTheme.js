@@ -3,7 +3,7 @@ import lightTheme from '../../assets/themes/light.json';
 import darkTheme from '../../assets/themes/dark.json';
 
 const themeStyles = [lightTheme, darkTheme];
-const THEME_SELECT_DEFAULT_VALUE = 0;
+const THEME_SELECT_DEFAULT_VALUE = 1;
 
 const useTheme = () => {
 	const [currentTheme, setCurrentTheme] = useState(() =>
