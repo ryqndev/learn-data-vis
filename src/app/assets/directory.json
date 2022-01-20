@@ -37,6 +37,19 @@
             }
         },
         {
+            "path": "distributions",
+            "title": "Distributions",
+            "author": "Ryan Yang",
+            "figures": {
+                "histograms": {
+                    "charts": ["r/ggplot2"],
+                    "name": "Histograms",
+                    "type": ["histograms"],
+                    "source": "gapminder"
+                }
+            }
+        },
+        {
             "path": "fund-data-vis",
             "title": "Fundamentals of Data Visualization",
             "author": "Claus O. Wilke",
