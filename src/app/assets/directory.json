@@ -50,6 +50,19 @@
             }
         },
         {
+            "path": "geospatial",
+            "title": "Geospatial",
+            "author": "Ryan Yang",
+            "figures": {
+                "histograms": {
+                    "charts": ["r/ggplot2"],
+                    "name": "Choropleths",
+                    "type": ["choropleths"],
+                    "source": "US fex"
+                }
+            }
+        },
+        {
             "path": "fund-data-vis",
             "title": "Fundamentals of Data Visualization",
             "author": "Claus O. Wilke",
