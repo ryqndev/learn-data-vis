@@ -54,7 +54,7 @@
             "title": "Geospatial",
             "author": "Ryan Yang",
             "figures": {
-                "histograms": {
+                "choropleths": {
                     "charts": ["r/ggplot2"],
                     "name": "Choropleths",
                     "type": ["choropleths"],

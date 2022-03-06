@@ -3,4 +3,4 @@
 These are data visualization tools that help with mapping data.
 
 #### Types of Charts
-* [Choropleths](/choropleth)
+* [Choropleths](/choropleths)
