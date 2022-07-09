@@ -58,7 +58,7 @@
                     "charts": ["r/ggplot2"],
                     "name": "Choropleths",
                     "type": ["choropleths"],
-                    "source": "US fex"
+                    "source": "US fec"
                 }
             }
         },
